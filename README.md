@@ -1,11 +1,11 @@
 # Effects of Traffic on Uber's Business
 
-### 🚦 Peak Hour Traffic Analysis & Prediction
-#### 📌 Introduction
+## 🚦 Peak Hour Traffic Analysis & Prediction
+### 📌 Introduction
 
 This project presents a comprehensive analysis of peak hour traffic patterns in New York City, considering the influence of weather conditions and special events. The primary objective is to understand key factors affecting congestion and develop predictive models to support better traffic management, planning, and business operations (e.g., Uber surge pricing).
 
-#### 📊 Data Sources
+### 📊 Data Sources
 
 - Traffic Data: Hourly traffic counts at multiple junctions
 
@@ -15,7 +15,7 @@ This project presents a comprehensive analysis of peak hour traffic patterns in 
 
 - Uber Case Study: Analysis of how traffic affects Uber’s pricing, driver earnings, availability, and customer satisfaction
 
-#### 🧹 Data Merging & Cleaning
+### 🧹 Data Merging & Cleaning
 
 - Merged datasets on DateTime basis
 
@@ -23,17 +23,17 @@ This project presents a comprehensive analysis of peak hour traffic patterns in 
 
 - Focused on peak hours only for targeted analysis
 
-#### 🤖 Machine Learning Models
+### 🤖 Machine Learning Models
 Model Development
 Multiple models were developed and evaluated using MSE, MAE, and R².
 
 - Grid Search Best Parameters
--     learning Rate: 0.1, Max Depth: 5, Estimators: 100, Subsample: 0.8
--     Performance → MSE: 52.986, MAE: 0.214, R²: 0.999
+      - learning Rate: 0.1, Max Depth: 5, Estimators: 100, Subsample: 0.8
+      - Performance → MSE: 52.986, MAE: 0.214, R²: 0.999
 
 - Random Search Best Parameters
--     Learning Rate: 0.177, Max Depth: 6, Estimators: 184, Subsample: 0.88
--     Performance → MSE: 0.027, R²: 0.936
+      - Learning Rate: 0.177, Max Depth: 6, Estimators: 184, Subsample: 0.88
+      - Performance → MSE: 0.027, R²: 0.936
 
 - ARIMA → MSE: 477.219
 
@@ -59,9 +59,9 @@ XGBoost Model Refinement
 - Impact of Events → Significant increases in traffic during special events
 - Average Vehicle Count per Hour → 12th, 19th, and 20th hours identified as peak times
 - Hourly Congestion
--     By Hour: Peak at 20th and 21st
--     By Day: Mondays worst; weekends lowest
--     By Month: October–November busiest; January–March lightest
+      - By Hour: Peak at 20th and 21st
+      - By Day: Mondays worst; weekends lowest
+      - By Month: October–November busiest; January–March lightest
 
 - Residual Analysis (XGBoost)
 
@@ -69,14 +69,14 @@ XGBoost Model Refinement
 - Residual vs. predicted plots show minimal bias
 - Temporal residuals confirm stability over time
 
-#### 🚖 Uber Case Study: Traffic & Pricing
+### 🚖 Uber Case Study: Traffic & Pricing
 
 - Traffic congestion plays a dual role in Uber’s business:
--     Increases Demand: More riders during heavy congestion
--     Decreases Supply: Drivers stuck in longer trips
--     Triggers Surge Pricing: Prices can rise up to 300% during peak congestion
--     Impacts Drivers: Higher fares per trip, but fewer total trips and risk of fatigue
--     Affects Customers: Higher fares + longer wait times → dissatisfaction, alternatives considered
+      - Increases Demand: More riders during heavy congestion
+      - Decreases Supply: Drivers stuck in longer trips
+      - Triggers Surge Pricing: Prices can rise up to 300% during peak congestion
+      = Impacts Drivers: Higher fares per trip, but fewer total trips and risk of fatigue
+      - Affects Customers: Higher fares + longer wait times → dissatisfaction, alternatives considered
 
 Uber’s response: real-time traffic data integration and predictive analytics for demand forecasting, driver incentives, and strategic positioning.
 
