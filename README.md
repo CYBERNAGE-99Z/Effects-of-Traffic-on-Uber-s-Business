@@ -26,25 +26,19 @@ This project presents a comprehensive analysis of peak hour traffic patterns in 
 ### 🤖 Machine Learning Models
 Model Development
 Multiple models were developed and evaluated using MSE, MAE, and R².
-
 - Grid Search Best Parameters
   - learning Rate: 0.1, Max Depth: 5, Estimators: 100, Subsample: 0.8
   - Performance → MSE: 52.986, MAE: 0.214, R²: 0.999
-
 - Random Search Best Parameters
-      - Learning Rate: 0.177, Max Depth: 6, Estimators: 184, Subsample: 0.88
-      - Performance → MSE: 0.027, R²: 0.936
-
+  - Learning Rate: 0.177, Max Depth: 6, Estimators: 184, Subsample: 0.88
+  - Performance → MSE: 0.027, R²: 0.936
 - ARIMA → MSE: 477.219
-
 - XGBoost → MSE: 0.0073
 
 XGBoost Model Refinement
 
 - Features included: hour_of_day, day_of_week, month, is_weekend, is_special_event, lag variables, weather features, and location-specific event markers
-
 - Hyperparameter tuning with RandomizedSearchCV (n_estimators, learning_rate, max_depth, subsample, colsample_bytree, gamma)
-
 - Evaluated with time series cross-validation (5 splits)
 
 📈 Aggregated Metrics:
@@ -58,10 +52,10 @@ XGBoost Model Refinement
 - Traffic Patterns under Weather → Clear variations observed
 - Impact of Events → Significant increases in traffic during special events
 - Average Vehicle Count per Hour → 12th, 19th, and 20th hours identified as peak times
-- Hourly Congestion
-      - By Hour: Peak at 20th and 21st
-      - By Day: Mondays worst; weekends lowest
-      - By Month: October–November busiest; January–March lightest
+- Hourly Congestion:
+  - By Hour: Peak at 20th and 21st
+  - By Day: Mondays worst; weekends lowest
+  - By Month: October–November busiest; January–March lightest
 
 - Residual Analysis (XGBoost)
 
@@ -72,11 +66,11 @@ XGBoost Model Refinement
 ### 🚖 Uber Case Study: Traffic & Pricing
 
 - Traffic congestion plays a dual role in Uber’s business:
-      - Increases Demand: More riders during heavy congestion
-      - Decreases Supply: Drivers stuck in longer trips
-      - Triggers Surge Pricing: Prices can rise up to 300% during peak congestion
-      = Impacts Drivers: Higher fares per trip, but fewer total trips and risk of fatigue
-      - Affects Customers: Higher fares + longer wait times → dissatisfaction, alternatives considered
+  - Increases Demand: More riders during heavy congestion
+  - Decreases Supply: Drivers stuck in longer trips
+  - Triggers Surge Pricing: Prices can rise up to 300% during peak congestion
+  - Impacts Drivers: Higher fares per trip, but fewer total trips and risk of fatigue
+  - Affects Customers: Higher fares + longer wait times → dissatisfaction, alternatives considered
 
 Uber’s response: real-time traffic data integration and predictive analytics for demand forecasting, driver incentives, and strategic positioning.
 
