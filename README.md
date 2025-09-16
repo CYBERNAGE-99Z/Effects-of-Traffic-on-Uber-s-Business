@@ -28,8 +28,8 @@ Model Development
 Multiple models were developed and evaluated using MSE, MAE, and R².
 
 - Grid Search Best Parameters
-      - learning Rate: 0.1, Max Depth: 5, Estimators: 100, Subsample: 0.8
-      - Performance → MSE: 52.986, MAE: 0.214, R²: 0.999
+  - learning Rate: 0.1, Max Depth: 5, Estimators: 100, Subsample: 0.8
+  - Performance → MSE: 52.986, MAE: 0.214, R²: 0.999
 
 - Random Search Best Parameters
       - Learning Rate: 0.177, Max Depth: 6, Estimators: 184, Subsample: 0.88
